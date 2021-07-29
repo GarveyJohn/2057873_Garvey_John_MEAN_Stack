@@ -1,0 +1,54 @@
+div.header
+{
+    background-color: yellow;
+    color: black;
+}
+
+div.body
+{
+    background-color: yellowgreen;
+    color: black;
+}
+
+div.footer
+{
+    background-color: green;
+    color: black;
+}
+
+p
+{
+    color:deepskyblue;
+    font-size: large;
+    font-style: italic;
+}
+
+h1
+{
+    font-weight: 100;
+}
+
+h2
+{
+    font-weight: 200;
+}
+
+h3
+{
+    font-weight: 300;
+}
+
+h4
+{
+font-weight: 400;
+}
+
+h5
+{
+font-weight: 500;
+}
+
+h6
+{
+    font-weight: 600;
+}
