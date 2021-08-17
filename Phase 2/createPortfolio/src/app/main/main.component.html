@@ -1,0 +1,40 @@
+<div *ngIf = "login">
+    <h2>This is login Page</h2>
+    Username: <input type="text" #userRef> <br>
+    Password: <input type="text" #passRef> <br>
+    <input type="button" value="Login" (click)="navPort(userRef,passRef)"> <br>
+    <input type="button" value="Sign Up" (click) = "showReg()">
+</div>
+
+<div *ngIf = "portfolio">
+    <h2>This is the portfolio Page</h2>
+    Welcome {{currentUser.username}} <br>
+    Contact Name: <input type="text" #contactName><br>
+    Phone Number: <input type="text" #phoneNumber>
+    <br>
+    <input type="button" value="Save" (click)="addContact(contactName, phoneNumber)">
+    <br>
+    <table border ="1">
+        <tr>
+            <th>Contact Name </th>
+            <th>Phone Number </th>
+        </tr>
+        <tr *ngFor="let data of currentContact">
+            <td>{{data.name}}</td>
+            <td>{{data.phoneNumber}}</td>
+        </tr>
+    </table>
+    
+    <input type="button" value="Login Page" (click)="showLogin()">
+</div>
+
+<div *ngIf = "register">
+    <h2>This is the registration Page</h2>
+    <input type="button" value="Back to Login Page" (click)="showLogin()">
+    <br>
+    First Name: <input type="text" #refFNameReg> <br>
+    Last Name: <input type="text" #refLNameReg> <br>
+    Username: <input type="text" #userRefReg> <br>
+    Password: <input type="text" #passRefReg> <br>
+    <input type="button" value="Sign Up" (click) = "addUserPass(refFNameReg,refLNameReg,userRefReg,passRefReg)">
+</div>

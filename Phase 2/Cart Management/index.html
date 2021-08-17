@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styling.css">
+    <script src="backend.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Shopping Cart</h1>
+        <p style="display:inline-block">Cart size: </p> <label id="cartSize">0</label>
+        <br>
+        <a href="cart.html" onclick="createSession()">Check-out</a>
+    </div>
+
+    <div class="row" style="overflow:auto;">
+        <div class="col-6" style="height: 200px; border: 1px solid; ">
+            <img src="xboxSeriesX.jpeg">
+            <h3>Name: </h3> <p style="display: inline">Xbox Series X</p>
+            <h3>Price: </h3> <p style="display: inline">499.99</p>
+            <br>
+            <button class="btn btn-primary" onclick="add('Xbox')">Add</button>
+        </div>
+
+        <div class="col-6" style="height: 200px; border: 1px solid;">
+            <img src="lamp.jpeg">
+            <h3>Name: </h3> <p style="display: inline">Table Lamp</p>
+            <h3>Price: </h3> <p style="display: inline">24.99</p>
+            <br>
+            <button class="btn btn-primary" onclick="add('Lamp')">Add</button>
+        </div>
+
+        <div class="col-6" style="height: 200px; border: 1px solid;">
+            <img src="couch.jpeg">
+            <h3>Name: </h3> <p style="display: inline">Couch</p>
+            <h3>Price: </h3> <p style="display: inline">1790.00</p>
+            <br>
+            <button class="btn btn-primary" onclick="add('Couch')">Add</button>
+        </div>
+
+        <div class="col-6" style="height: 200px; border: 1px solid;">
+            <img src="pencil.jpeg">
+            <h3>Name: </h3> <p style="display: inline">Pencils</p>
+            <h3>Price: </h3> <p style="display: inline">4.99</p>
+            <br>
+            <button class="btn btn-primary" onclick="add('Pencils')">Add</button>
+        </div>
+
+    </div>
+    
+    
+</body>
+</html>
