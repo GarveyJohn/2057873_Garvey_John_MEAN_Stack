@@ -1,0 +1,21 @@
+<div class="raisedbox">
+    <h2>Welcome to the Online Employment Test</h2>
+    <p>Please sign in down below to start the test. (Can use any username and password you want)</p>
+    <p>The test is conducted of 10 questions that will test your knowledge on HTML,CSS, and JavaScript</p>
+    <p>You must get a 70% to pass the test</p>
+    <p>Good luck!</p>
+
+    <form>
+        <mat-form-field appearance="fill">
+            <mat-label>Username: </mat-label>
+            <input matInput>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Password: </mat-label>
+            <input matInput>
+        </mat-form-field>
+        <br>
+        <button type ="button" mat-stroked-button color ="primary" (click)="start()">Submit</button>
+        <button type ="reset" mat-stroked-button color ="secondary">Reset</button>
+    </form>
+</div>

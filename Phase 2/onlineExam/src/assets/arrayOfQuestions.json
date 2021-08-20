@@ -1,0 +1,93 @@
+[
+    {
+        "question":"Where is the JavaScript placed inside an HTML document or page?",
+        "ans1":"In the <body> and <head> sections.",
+        "ans2": "In the <meta> section.",
+        "ans3": "In the <title> section",
+        "ans4": "In the <footer> section.",
+        "correct":"In the <body> and <head> sections."
+
+    },
+
+    {
+        "question":"In JavaScript, what element is used to store multiple values in a single variable?",
+        "ans1":"Strings",
+        "ans2": "Arrays",
+        "ans3": "Variables",
+        "ans4": "Functions",
+        "correct":"Arrays"
+
+    },
+    {
+        "question":"What is the name of the statement that is used to exit or end a loop?",
+        "ans1":"Break statement",
+        "ans2": "Falter statement",
+        "ans3": "Conditional statement",
+        "ans4": "Close statement",
+        "correct":"Break statement"
+
+    },
+    {
+        "question":"What tag is used to define the metadata about an HTML document, and must always be included inside the element?",
+        "ans1":"<div>",
+        "ans2": "<img>",
+        "ans3": "<table>",
+        "ans4": "<meta>",
+        "correct":"<meta>"
+
+    }
+    ,{
+        "question":"What tag is used to define an interactive field where users can enter data?",
+        "ans1":"<input>",
+        "ans2": "<datalist>",
+        "ans3": "<dialog>",
+        "ans4": "<enterpoint>",
+        "correct":"<input>"
+
+    },
+    {
+        "question":"What tag is used to define – and place – an interactive button in an HTML document?",
+        "ans1":"<footer>",
+        "ans2": "<clickfield>",
+        "ans3": "<button>",
+        "ans4": "<td>",
+        "correct":"<button>"
+
+    },
+    {
+        "question":"What tag is used to define an unordered list that is bulleted?",
+        "ans1":"<s>",
+        "ans2": "<li>",
+        "ans3": "<u>",
+        "ans4": "<ul>",
+        "correct":"<ul>"
+
+    },
+    {
+        "question":"Cass can be used to greatly improve the ____ of an HTML form.",
+        "ans1":"Appearance",
+        "ans2": "Performance",
+        "ans3": "Layout",
+        "ans4": "Colors",
+        "correct":"Appearance"
+
+    },
+    {
+        "question":"What is the CSS property that is used to specify the edges of a table?",
+        "ans1":"Margins",
+        "ans2": "Borders",
+        "ans3": "Boxes",
+        "ans4": "Fill",
+        "correct":"Borders"
+
+    },
+    {
+        "question":"External stylesheets are stored in what type of files?",
+        "ans1":"XML",
+        "ans2": "PHP",
+        "ans3": "HTML",
+        "ans4": "CSS",
+        "correct":"CSS"
+
+    }
+]
