@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/JavaScript">
+        let ws = new WebSocket("ws://localhost:9090");
+        let chatLog = "";
+    
+        //open the connecton 
+        ws.onopen= ()=> {
+            // send data to web socket server application
+            info = ()=> {
+                let msg = document.getElementById("clientMsg").value;
+                chatLog += "<p>Client: " + msg + "</p>";
+                ws.send(msg);
+                document.getElementById("clientMsg").value="";
+                document.getElementById("display").innerHTML = chatLog;
+            }
+        }
+        // receive the messag from server application 
+        ws.onmessage = (msg)=> {
+            chatLog += "<p>Server: " + msg.data + "</p>";
+            console.log(msg.data);
+            document.getElementById("display").innerHTML = chatLog;
+        }
+    </script>
+</head>
+<body>
+    <div id="display">
+
+    </div>
+    <div>
+        <input type="text" id="clientMsg">
+        <input type="button" value="Send Message" onclick="info()">
+    </div>
+</body>
+</html>
